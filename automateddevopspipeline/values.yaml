@@ -1,6 +1,6 @@
 image:
   repository: juanmats99/devops-project-cicd
-  tag: a6f1912
+  tag: 03651fb
   pullPolicy: IfNotPresent
 
 service:

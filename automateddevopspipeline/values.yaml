@@ -1,6 +1,6 @@
 image:
   repository: juanmats99/devops-project-cicd
-  tag: 8b514a8
+  tag: a6f1912
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP

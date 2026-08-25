@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1aplha1
+kind: Application
+metadata:
+  name: automateddevopspipeline
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/jumatos/DevOps-Project-AutomationCICD"
+    targetRevision: HEAD
+    path: automateddevopspipeline
+  destination:
+    server: "https://kubernetes.default.sc"
+    namespace: default
+  syncPolicy:
+   automated:
+      prune: true
+     selfHeal: true

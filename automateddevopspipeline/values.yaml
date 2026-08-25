@@ -2,13 +2,19 @@ image:
   repository: juanmats99/devops-project-cicd
   tag: a6f1912
   pullPolicy: IfNotPresent
+
 service:
   type: ClusterIP
   port: 8080
+
 ingress:
-   enable: false
+  enabled: false
+
+httpRoute:
+  enabled: false
+
 serviceAccount:
-   enable: false
+  enabled: false
+
 autoscaling:
-   enable: false
-   
+  enabled: false
